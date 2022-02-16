@@ -1,0 +1,39 @@
+{
+	"name": "statetoy",
+	"version": "0.0.0",
+	"license": "MIT",
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "./build.js",
+		"dev": "./build.js -w",
+		"size": "sizesnap"
+	},
+	"prettier": "@barelyhuman/prettier-config",
+	"devDependencies": {
+		"@barelyhuman/prettier-config": "^0.1.0",
+		"esbuild": "^0.14.21",
+		"estrella": "^1.4.1",
+		"sizesnap": "^0.1.1"
+	},
+	"peerDependencies": {
+		"react": "^17.0.2"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"sizesnap": {
+		"files": [
+			"dist/*"
+		]
+	}
+}

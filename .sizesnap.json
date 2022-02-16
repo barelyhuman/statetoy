@@ -1,0 +1,12 @@
+{
+  "dist/index.js": {
+    "size": "1.27KB",
+    "brotli": "550B",
+    "gzip": "594B"
+  },
+  "dist/index.mjs": {
+    "size": "450B",
+    "brotli": "232B",
+    "gzip": "256B"
+  }
+}
